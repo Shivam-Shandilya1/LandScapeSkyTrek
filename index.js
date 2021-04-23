@@ -1,5 +1,3 @@
-
-
 function scrollToTop() {
     
     var position =
@@ -27,3 +25,8 @@ function scrollToBottom() {
     
 }
 /***************************************************************/
+
+$(document).on('scroll',function()
+{
+    $('.text').css("top",Math.min(180+0.9*window.scrollY,400)+"px");
+})
