@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="container">
-    <a href="#bottom" onclick="scrollToBottom(); return false" class="gotobot">
+    <a href="#bottom" onclick="scrollToBottom();dropcancel();callcancelled(); return false" id="toplink">
  <div class="section1" id="top">
      <div class="insideSection">
        
@@ -21,7 +21,7 @@
  </div>
 </a>
  
- <a href="#top" onclick="scrollToTop(); return false" >
+ <a href="#top" onclick="scrollToTop();dropcancelled();callcancel(); return false" id="bottomlink" >
  <div class="section2" id="bottom"></div> 
  </a>
 </div>
